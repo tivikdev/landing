@@ -1,0 +1,4 @@
+Sitemap: https://tivik.dev/sitemap.txt
+User-agent: *
+Disallow:
+

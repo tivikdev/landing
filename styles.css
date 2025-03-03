@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+}
+
+:root {
+    color-scheme: dark;
+    --link-color: #2dc73a;
+    --background-color: #2a2a2a;
+    --welcome-message-color: #3b3b3b;
+    --header-color: #ececec;
+}
+
+/* Welcome animation */
+#helloText {
+    font-size: 2rem;
+    text-align: center;
+    color:var(--header-color);
+}
+
+#welcomeMessage {
+    background-color: var(--welcome-message-color);
+    display: none; /* Show welcome message only if JS enabled */
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+@keyframes hide {
+    0% { transform: translate(0);}
+    100% { transform: translate(0, -120vh);}
+}
+  
+@keyframes show {
+    0% { transform: translate(0, -120vh);}
+    100% { transform: translate(0);}
+}
+  
+.hide {
+    animation: hide 0.5s forwards ease-in-out;
+}
+  
+.show {
+    animation: show 0.5s forwards ease-in-out;
+}
+
+/* Page styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color);
+}
+
+a, a:visited {
+    color: var(--link-color);
+}
+
+h1 {
+    color: var(--header-color);
+}
+
+.centerit {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#centerbox {
+    display: grid;
+}
+
+.horizontalLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
