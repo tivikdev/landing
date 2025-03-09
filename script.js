@@ -105,6 +105,7 @@ const txtArray = [
 "Bed rotting",
 "Late night conversations",
 "Welcome back",
+"Enjoy the ride",
 ];
 
 const speed = 50;
